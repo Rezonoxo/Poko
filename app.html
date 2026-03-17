@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <!-- CSP — allows Google OAuth popup and Anthropic API -->
+    <!-- Required for Google OAuth popup -->
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin-allow-popups">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="unsafe-none">
+    <!-- CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://accounts.google.com https://apis.google.com; frame-src https://accounts.google.com https://content.googleapis.com; connect-src 'self' https://accounts.google.com https://www.googleapis.com https://oauth2.googleapis.com https://api.anthropic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;">
     <title>Poko — Personal Budget</title>
 
@@ -23,7 +26,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Poko — osobisty menedżer budżetu. Śledź dochody, wydatki, długi i cele. Bezpłatny, prywatny, bez rejestracji." />
-    <script type="module" crossorigin src="/Poko/assets/app-Bhg0OijY.js"></script>
+    <script type="module" crossorigin src="/Poko/assets/app-vuhyDJmu.js"></script>
   </head>
   <body>
     <div id="root"></div>
